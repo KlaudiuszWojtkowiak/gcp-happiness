@@ -34,7 +34,7 @@ public class HappinessDetector {
                     break;
                 }
                 var sentiment = languageApi.process(line);
-                System.out.printf("Your happiness level is: %s, intensify: %s %n",
+                System.out.printf("Your happiness level is: %s, intensity: %s %n",
                         translator.readHappiness(sentiment.getScore()),
                         translator.readIntensify(sentiment.getMagnitude()));
             }
